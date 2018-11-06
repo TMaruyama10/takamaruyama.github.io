@@ -1,0 +1,251 @@
+/* line 1, ../sass/style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 7, ../sass/style.scss */
+body {
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: lighter;
+}
+
+/* line 12, ../sass/style.scss */
+p {
+  margin: 0;
+}
+
+/* line 16, ../sass/style.scss */
+ul {
+  padding: 0;
+}
+
+/* line 20, ../sass/style.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 24, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 29, ../sass/style.scss */
+header {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(#418ff4, #42f4b3);
+  position: relative;
+}
+
+/* line 37, ../sass/style.scss */
+.content {
+  width: 100%;
+  height: 100vh;
+}
+/* line 41, ../sass/style.scss */
+.content--upper {
+  background-image: linear-gradient(#42f4b3, #ffc1f3);
+}
+/* line 44, ../sass/style.scss */
+.content--lower {
+  background-image: linear-gradient(#ffc1f3, #ff9375);
+}
+/* line 47, ../sass/style.scss */
+.content--bottom {
+  background-image: linear-gradient(#ff9375, #66fffc);
+}
+
+/* line 52, ../sass/style.scss */
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/* line 63, ../sass/style.scss */
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+  z-index: 100;
+}
+
+/* line 70, ../sass/style.scss */
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: transparent;
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 20px;
+  transition: 1s;
+}
+
+/* line 83, ../sass/style.scss */
+nav.black ul {
+  background: #333;
+}
+
+/* line 87, ../sass/style.scss */
+nav ul li {
+  display: inline-block;
+  padding: 16px 20px;
+  margin: 0px 20px;
+}
+
+/* line 93, ../sass/style.scss */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* line 99, ../sass/style.scss */
+#skills, #works, #top {
+  position: relative;
+  top: -200px;
+}
+
+/* line 104, ../sass/style.scss */
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+/* line 117, ../sass/style.scss */
+.name--container {
+  width: 30%;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  margin: 0 auto;
+  background-color: #333;
+}
+/* line 126, ../sass/style.scss */
+.name--text {
+  font-size: 2em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+/* line 137, ../sass/style.scss */
+.skills {
+  width: 25%;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+/* line 143, ../sass/style.scss */
+.skills--title {
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* line 149, ../sass/style.scss */
+.skills--subtitle {
+  font-size: 1.5em;
+}
+/* line 152, ../sass/style.scss */
+.skills--subtitle__left {
+  float: left;
+}
+/* line 155, ../sass/style.scss */
+.skills--subtitle__right {
+  float: right;
+}
+/* line 158, ../sass/style.scss */
+.skills--subtitle p {
+  margin-bottom: 10px;
+}
+
+/* line 165, ../sass/style.scss */
+.works {
+  text-align: center;
+}
+/* line 168, ../sass/style.scss */
+.works--container {
+  width: 30%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 176, ../sass/style.scss */
+.works--item {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+/* line 181, ../sass/style.scss */
+.works--item a:hover {
+  color: #fff;
+}
+
+/* line 187, ../sass/style.scss */
+.contact {
+  text-align: center;
+  width: 30%;
+  position: relative;
+  margin: 0 auto;
+  top: 30%;
+}
+
+@media (max-width: 800px) {
+  /* line 197, ../sass/style.scss */
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  /* line 203, ../sass/style.scss */
+  nav ul {
+    max-height: 0px;
+    background: #000;
+  }
+
+  /* line 208, ../sass/style.scss */
+  nav.black ul {
+    background: #000;
+  }
+
+  /* line 212, ../sass/style.scss */
+  .showing {
+    max-height: 34em;
+  }
+
+  /* line 216, ../sass/style.scss */
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+  }
+
+  /* line 223, ../sass/style.scss */
+  .menu-icon {
+    display: block;
+  }
+}

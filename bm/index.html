@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bookmark Maker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+  </head>
+
+  <body onload="fetchBookmarks()">
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Bookmark </h1>
+          <form id="myForm">
+            <div class="form-group">
+                <label>Site Name</label>
+                <input type="text" class="form-control" id="siteName" placeholder="Website Name" >
+            </div>
+            <div class="form-group">
+                <label>Site URL</label>
+                <input type="text" class="form-control" id="siteUrl" placeholder="Website URL" >
+            </div>
+            <button type="submit" class="btn btn-primary"> Add Bookmark </button>
+          </form>
+          
+        </div>
+      </div>
+
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+                <div id="bookmarksResults"></div>
+            </div>
+       
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>&copy; Bookmarker 2017-2018</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="js/main.js" ></script>
+  </body>
+</html>
+

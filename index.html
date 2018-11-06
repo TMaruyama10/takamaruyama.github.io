@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Takahiro Portfolio</title>
+      <link rel="stylesheet" href="stylesheets/style.css">
+      <link rel="stylesheet" href="stylesheets/aos.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="aos.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+            <nav>
+                  <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                  </div>
+                  <div class="logo">
+                        TM
+                  </div>
+                  <div class="menu">
+                        <ul>
+                              <li><a href="#top">Top</a></li>
+                              <li><a href="#skills">Skills</a></li>
+                              <li><a href="#works">Works</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                        </ul>
+                  </div>
+            </nav>
+
+            <header>
+                  <div id="#top"></div>
+                  <div class="name--container">
+                        <h4 class="name--text">Takahiro Maruyama</h4>
+                  </div>
+            </header>
+
+            
+            <section class="content content--upper">
+                  <div id="skills"></div>
+                  <div class="skills" data-aos="fade-up" data-aos-delay="500">
+                        <h4 class="skills--title">Skills</h4>
+                        <div class="skills--subtitle skills--subtitle__left">
+                              <p>&lt;Language&gt;</p>
+                              <span>HTML5</span><br>
+                              <span>CSS3(Sass)</span><br>
+                              <span>Javascript</span><br>
+                              <span>PHP</span>
+                        </div>
+                        <div class="skills--subtitle skills--subtitle__right">
+                              <p>&lt;Frameworks&gt;</p>
+                              <span>Bootstrap</span><br>
+                              <span>jQuery</span><br>
+                              <span>Angular</span>
+                        </div>
+                  </div>
+            </section>
+
+            <section class="content content--lower">
+                  <div id="works" ></div>
+                  <div class="works" data-aos="fade-up">
+                        <h4 class="skills--title">Works</h4>
+                        <ul class="works--container">
+                              <li class="works--item"><a href="bgws/index.html" target="_blank">Company Website</a></li>
+                              <li class="works--item"><a href="pw/index.html" target="_blank">Parallax Website</a></li>
+                              <li class="works--item"><a href="rw/index.html" target="_blank">Responsive Website</a></li>
+                              <li class="works--item"><a href="wc/index.html" target="_blank">Weight Converter</a></li>
+                              <li class="works--item"><a href="bm/index.html" target="_blank">Bookmarker</a></li>
+                        </ul>
+                  </div>
+            </section>
+
+            <section class="content content--bottom">
+                  <div id="contact"></div>
+                  <div class="contact" data-aos="fade-up">
+                        <h4 class="skills--title">Contact</h4>
+                        <ul>
+                              <li class="works--item">Email: takamaruyama6@gmail.com</li>
+                              <li class="works--item"><a href="https://www.linkedin.com/in/takahiro-maruyama-582544137/">Linkedin Profile</a></li>
+                        </ul>
+                  </div>
+            </section>
+      </div>
+
+<script type="text/javascript">
+
+      AOS.init({
+            once: true,
+            duration: 700,
+      });
+
+      // Menu-toggle button
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                  return false;
+                } else {
+                  $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                  $target.focus(); // Set focus again
+                };
+              });
+            }
+          }
+        });
+
+
+      </script>
+
+</body>
+</html>

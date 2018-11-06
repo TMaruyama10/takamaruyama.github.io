@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>Blitzgate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="image/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="stylesheet" href="aos/aos.css"/>
+	<link rel="stylesheet" href="stylesheets/flexslider.css" type="text/css" media="screen" />
+</head>
+
+<body>
+
+<div id="wholePage" class="whole-page">
+	<div id="home"></div>
+	
+	<nav id="topnav" class="navbar nav--sticky">
+		<div class="nav--logo">
+			<a href="#">
+				<img src="image/bg-logo.png" alt="logo" class="image-size--logo">
+			</a>
+		</div>
+		<div class="company-name work-sans"><a href="#home" class="company-name__text">BLITZGATE</a></div>
+		
+		<ul id="navigation" class="nav--container">
+
+			<li class="nav--item work-sans">
+				<a href="#home" class="nav--item__menu ">HOME</a>
+			</li>
+			<li class="nav--item work-sans">
+				<a href="#aboutUs" class="nav--item__menu ">ABOUT US</a>
+			</li>
+			<li class="nav--item work-sans">
+				<a href="javascript:void(0);" id="toggleDropdown" class="nav--item__menu">SERVICES<div class="triangle"></div></a>
+				<ul class="nav--item__sub">
+					<li class="nav--item__sub--item"><a href="app.html">スマホアプリ開発</a></li>
+					<li class="nav--item__sub--item"><a href="ar.html">AR開発</a></li>
+					<li class="nav--item__sub--item not-available"><a href="javascript:void(0);">WEB開発</a></li>
+					<li class="nav--item__sub--item"><a href="robot.html">ロボットアプリ</a></li>
+					<li class="nav--item__sub--item not-available"><a href="javascript:void(0);">AI</a></li>
+					<li class="nav--item__sub--item not-available"><a href="javascript:void(0);">IoT</a></li>
+				</ul>
+			</li>
+			<li class="nav--item work-sans"><a href="#ourUpdate" class="nav--item__menu ">UPDATES</a></li>
+			<li class="nav--item work-sans"><a href="#ourTeam" class="nav--item__menu ">MEMBER</a></li>
+			<li class="nav--item work-sans"><a href="#contactUs" class="nav--item__menu ">CONTACT US</a></li>
+			<li class="nav--item work-sans"><a href="#blog" class="nav--item__menu ">BLOG</a></li>
+		</ul>
+		<button id="hamburgerBtn" class="hamburger hamburger--spin" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+	</nav>
+
+	<nav id="mySideNav" class="sidenav">
+		<ul>
+			<li><a href="#home" class="sidenav__link">HOME</a></li>
+			<li><a href="#aboutUs" class="sidenav__link">ABOUT&nbsp;US</a></li>
+			<li>
+				<a href="javascript:void(0);" id="toggleSubmenu" class="sidenav__link">SERVICE</a>
+				<ul class="sidenav--submenu">
+					<li><a href="app.html" class="sidenav__service">スマホアプリ開発</a></li>
+					<li><a href="ar.html" class="sidenav__service">AR開発</a></li>
+					<li><a href="javascript:void(0);" class="sidenav__service not-available">WEB開発</a></li>
+					<li><a href="robot.html" class="sidenav__service">ロボットアプリ</a></li>
+					<li><a href="javascript:void(0);" class="sidenav__service not-available">AI</a></li>
+					<li><a href="javascript:void(0);" class="sidenav__service not-available">IoT</a></li>
+				</ul>
+			</li>
+			<li><a href="#ourUpdate" class="sidenav__link">UPDATES</a></li>
+			<li><a href="#ourTeam" class="sidenav__link">MEMBER</a></li>
+			<li><a href="#contactUs" class="sidenav__link">CONTACT&nbsp;US</a></li>
+			<li><a href="#blog" class="sidenav__link">BLOG</a></li>
+		</ul>
+	</nav>
+
+	<!-- particles.js container -->
+		<div id="particles-js">
+			<div class="blitzgate-container">
+				<span class="blitzgate-name work-sans">BLITZGATE</span><br>
+				<span class="blitzgate-slogan work-sans">Become the Wizards of Tomorrow</span>
+			</div>
+		</div>
+		<!-- stats - count particles -->
+		<div class="count-particles"><span class="js-count-particles">--</span></div>
+
+		<!-- 画面サイズ 500px 以下になったときに表示される -->
+		<div class="sm-screen-img">
+			<div class="blitzgate-container">
+				<span class="blitzgate-name--sm work-sans">BLITZGATE</span>
+				<br>
+				<span class="blitzgate-slogan--sm work-sans">Become the Wizards of Tomorrow</span>
+			</div>
+		</div>
+
+
+	<div id="contentTop" class="main-content">
+
+		<section class="aboutus">
+			<div id="aboutUsLeft" class="aboutus__left">
+				<div id="aboutUs"></div>
+				<div class="title-container title-container--onmain title-container--onmain--aboutus" data-aos="fade-right">
+					<div class="red-line"></div>
+					<h2 class="section-title work-sans">ABOUT US</h2>
+				</div>
+				<div class="background-font--large">ABOUT US</div>
+				
+			</div>
+
+			<div id="aboutUsRight" class="aboutus__right">
+				<ul class="company-detail">
+					<li class="company-detail__item" data-aos="fade-up">
+						<h4>会社名</h4>
+						<div class="company-detail__text">
+							<span>株式会社ブリッツゲート</span><br>
+							<span>BlitzGate.Co.,Ltd</span>
+						</div>
+					</li>
+					<li class="company-detail__item" data-aos="fade-up">
+						<h4>所在地</h4>
+						<a href="https://goo.gl/maps/oUKR3955SiP2" class="company-detail__text company-detail__text--link" target="_blank">
+							<span>&#12306;460-0003</span><br>
+							<span>愛知県名古屋市中区錦１丁目16-13</span><br>
+							<span>チサンマンション錦 1102</span>
+						</a>
+					</li>
+					<li class="company-detail__item" data-aos="fade-up">
+						<h4>連絡先</h4>
+						<div class="company-detail__text">
+							<a href="tel:05252749631" class="company-detail__text--link">050-5274-9631</a><br>
+							<a href="mailto:info@blitzgate.co.jp" class="company-detail__text--link">info@blitzgate@co.jp</a>
+						</div>
+					</li>
+					<li class="company-detail__item" data-aos="fade-up">
+						<h4>代表取締役</h4>
+						<div class="company-detail__text">
+							<span>中原宏元</span>
+						</div>
+					</li>
+					<li class="company-detail__item" data-aos="fade-up">
+						<h4>業務内容</h4>
+						<div class="company-detail__text">
+							<span>ARアプリ開発／ARコンテンツ制作／Pepperアプリ開発／ソフトウェア開発／アプリケーション開発（iOS・Android）／ネットワーク構築／Webデザイン制作／ホームページ制作／ECサイト構築／業務システム開発</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="service">
+			<div class="service-container">
+				<div class="title-container title-container--service" data-aos="fade-right">
+					<div class="red-line"></div>
+					<h2 class="section-title work-sans">OUR SERVICES</h2>
+				</div>
+				<div class="service-container--right">
+					<div id="ourService"></div><!-- Service アンカータグ -->
+				</div>
+
+				<div class="service-gallery-menu">
+			          <ul class="service-gallery">
+			          	<!-- 模範 -->
+			            <li class="service-gallery__item" data-aos="zoom-in-right">
+			            	<a href="app.html" class="service-gallery__link">
+				            	<figure>
+					  	    		<img src="image/app.jpg" alt="app" class="service-gallery__image"/>
+					  	    		<figcaption class="service-caption">
+					  	    			<div class="service-caption--en">SMARTPHONE APPS</div>
+					  	    			<div class="service-caption--jp">スマホアプリ開発</div>
+					  	    		</figcaption>
+					  	    	</figure>
+				  	    	</a>
+			  	    	</li>
+			  	    	<!-- 模範↑ -->
+			  	    	<li class="service-gallery__item" data-aos="zoom-in">
+			  	    		<a href="ar.html" class="service-gallery__link">
+			            	<figure>
+				  	    		<img src="image/ar.jpg" alt="ar" class="service-gallery__image"/>
+				  	    		<figcaption class="service-caption">
+				  	    			<div class="service-caption--en">AUGMENTED REALITY</div>
+				  	    			<div class="service-caption--jp">AR開発</div>
+				  	    		</figcaption>
+				  	    	</figure>
+				  	    	</a>
+			  	    	</li>
+			  	    	<li class="service-gallery__item" data-aos="zoom-in-left">
+			  	    		<a href="javascript:void(0);" class="service-gallery__link" onclick="Alert()">
+			            	<figure>
+				  	    		<img src="image/webdev.jpg" alt="web" class="service-gallery__image"/>
+				  	    		<figcaption class="service-caption">
+				  	    			<div class="service-caption--en">WEB DEVELOPMENT</div>
+				  	    			<div class="service-caption--jp">WEB開発</div>
+				  	    		</figcaption>
+				  	    	</figure>
+				  	    	</a>
+			  	    	</li>
+			  	    	<li class="service-gallery__item" data-aos="zoom-in-right">
+			  	    		<a href="robot.html" class="service-gallery__link">
+			            	<figure>
+				  	    		<img src="image/pepper.jpg" alt="pepper" class="service-gallery__image"/>
+				  	    		<figcaption class="service-caption">
+				  	    			<div class="service-caption--en">ROBOT APPLICATION</div>
+				  	    			<div class="service-caption--jp">ロボットアプリ開発</div>
+				  	    		</figcaption>
+				  	    	</figure>
+				  	    	</a>
+			  	    	</li>
+			  	    	<li class="service-gallery__item" data-aos="zoom-in">
+			  	    		<a href="javascript:void(0);" class="service-gallery__link" onclick="Alert()">
+			            	<figure>
+				  	    		<img src="image/ai.png" alt="ai" class="service-gallery__image"/>
+				  	    		<figcaption class="service-caption">
+				  	    			<div class="service-caption--en">ARTIFICIAL INTELLIGENCE</div>
+				  	    			<div class="service-caption--jp">AI</div>
+				  	    		</figcaption>
+				  	    	</figure>
+				  	    	</a>
+			  	    	</li>
+			  	    	<li class="service-gallery__item" data-aos="zoom-in-left">
+			  	    		<a href="javascript:void(0);" class="service-gallery__link" onclick="Alert()">
+			            	<figure>
+				  	    		<img src="image/iot.png" alt="iot" class="service-gallery__image"/>
+				  	    		<figcaption class="service-caption">
+				  	    			<div class="service-caption--en">Internet of Things</div>
+				  	    			<div class="service-caption--jp">IoT</div>
+				  	    		</figcaption>
+				  	    	</figure>
+				  	    	</a>
+			  	    	</li>
+			          </ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="update" class="update">
+			<div id="updateLeft" class="update__left">
+				<div id="ourUpdate"></div> <!-- UPDATE アンカータグ -->
+				<div class="title-container title-container--onmain" data-aos="fade-right">
+					<div class="red-line"></div>
+					<h2 class="section-title work-sans">UPDATES</h2>
+				</div>
+				<div class="background-font--large">UPDATES</div>
+			</div>
+			<div id="updateRight" class="update__right">
+				<ul class="update-content">
+
+					<!-- 以下をループで出力 -->
+					<li class="update-content__post">
+						<div class="update-content__date">2018/08/10</div>
+						<div class="update-content__title"><a href="javascript:void(0)" class="update-toggle">明日から夏季休業に入ります。</a></div>
+						<div id="hiddenText" class="hidden-text update-content__text">山路を登りながら、こう考えた。智ちに働けば角かどが立つ。情に棹させば流される。意地を通せば窮屈だ。とかくに人の世は住みにくい。</div>
+					</li>
+					<!-- ここまでをループで出力 -->
+
+					<li class="update-content__post">
+						<div class="update-content__date">2018/08/09</div>
+						<div class="update-content__title"><a href="javascript:void(0)" class="update-toggle">ブログ更新</a></div>
+						<div class="hidden-text update-content__text">住みにくさが高じると、安い所へ引き越したくなる。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。人の世を作ったものは神でもなければ鬼でもない。やはり向う三軒両隣にちらちらするただの人である。</div>
+					</li>
+					<li class="update-content__post">
+						<div class="update-content__date">2018/08/07</div>
+						<div class="update-content__title"><a href="javasctipt:void" class="update-toggle">勉強会開催のお知らせ</a></div>
+						<div class="hidden-text update-content__text">ただの人が作った人の世が住みにくいからとて、越す国はあるまい。あれば人でなしの国へ行くばかりだ。人でなしの国は人の世よりもなお住みにくかろう。</div>
+						<!-- <div class="update-content__breadcrumb">&#8286;</div> -->
+					</li>
+					
+				</ul>
+			</div>
+		</section>
+
+		<section class="member">
+			<div class="member-container">
+				<div class="title-container title-container--service" data-aos="fade-right">
+					<div class="red-line"></div>
+					<h2 class="section-title work-sans">OUR TEAM</h2>
+				</div>
+				<div id="ourTeam"></div>
+
+				<div class="member-container--left"></div>
+				
+				<div class="member-photo-menu">
+
+					<div class="flexslider carousel">
+			        	<ul class="slides">
+				          	<!-- 模範 -->
+				            <li class="slide-member">
+				            	<a href="javascript:void(0)" class="modal-btn" data-type="1">
+					            	<div class="slide-text--hidden">
+					            		<p class="slide-text--medium work-sans">HIROMOTO <br> NAKAHARA </p>
+					            	</div>
+					  	    	    <img src="image/member/gclooney.jpg" alt="nakahara" class="image-size--slide">
+				  	    	    </a>
+				  	    	</li>
+				  	    	<!-- 模範↑ -->
+
+				  	    	<li class="slide-member">
+				            	<a href="javascript:void(0)" class="modal-btn" data-type="2">
+					            	<div class="slide-text--hidden">
+					            		<p class="slide-text--medium work-sans">MOTOKI <br> HIGASHI </p>
+					            	</div>
+					  	    	    <img src="image/member/higashi1.png" alt="higashi" class="image-size--slide"/>
+				  	    	    </a>
+				  	    	</li>
+				  	    	<li class="slide-member">
+				            	<a href="javascript:void(0)" class="modal-btn" data-type="3">
+					            	<div class="slide-text--hidden">
+					            		<p class="slide-text--medium work-sans">YU <br> NAKAJI</p>
+					            	</div>
+					  	    	    <img src="image/member/nakaji1.png" alt="nakaji" class="image-size--slide"/>
+				  	    	    </a>
+				  	    	</li>
+				  	    	<li class="slide-member">
+				            	<a href="javascript:void(0)" class="modal-btn" data-type="4">
+					            	<div class="slide-text--hidden">
+					            		<p class="slide-text--medium work-sans">SEIYA <br> FUJIOKA </p>
+					            	</div>
+					  	    	    <img src="image/member/fujioka1.jpg" alt="fujioka" class="image-size--slide"/>
+				  	    	    </a>
+				  	    	</li>
+				  	    	<li class="slide-member">
+				            	<a href="javascript:void(0)" class="modal-btn" data-type="5">
+					            	<div class="slide-text--hidden">
+					            		<p class="slide-text--medium work-sans">YU <br> MATSUSHIMA</p>
+					            	</div>
+					  	    	    <img src="image/member/sam.jpg" alt="matsushima" class="image-size--slide"/>
+				  	    	    </a>
+				  	    	</li>
+				  	    	<li class="slide-member">
+				            	<a href="javascript:void(0)" class="modal-btn" data-type="6">
+					            	<div class="slide-text--hidden">
+					            		<p class="slide-text--medium work-sans">RISA <br> TAJIMA </p>
+					            	</div>
+					  	    	    <img src="image/member/tajima1.jpeg" alt="tajima" class="image-size--slide"/>
+				  	    	    </a>
+				  	    	</li>
+				  	    	<li class="slide-member">
+				            	<a href="javascript:void(0)" class="modal-btn" data-type="7">
+					            	<div class="slide-text--hidden">
+					            		<p class="slide-text--medium work-sans">TAKAHIRO <br> MARUYAMA </p>
+					            	</div>
+					  	    	    <img src="image/member/takahiro1.png" alt="maruyama" class="image-size--slide"/>
+				  	    	    </a>
+				  	    	</li>
+				  	    	<li class="slide-member">
+				            	<a href="javascript:void(0)" class="modal-btn" data-type="8">
+					            	<div class="slide-text--hidden">
+					            		<p class="slide-text--medium work-sans">HIROTO <br> WATANABE </p>
+					            	</div>
+					  	    	    <img src="image/member/watanabe1.jpg" alt="watanabe" class="image-size--slide"/>
+				  	    	    </a>
+				  	    	</li>
+				  	    	<li class="slide-member">
+				            	<a href="javascript:void(0)" class="modal-btn" data-type="9">
+					            	<div class="slide-text--hidden">
+					            		<p class="slide-text--medium work-sans">NODA<br>RYOJI</p>
+					            	</div>
+					  	    	    <img src="image/member/noda1.jpg" alt="noda" class="image-size--slide"/>
+				  	    	    </a>
+				  	    	</li>
+				        </ul>
+			        </div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-blog">
+			<div class="blog">
+				<div class="title-container title-container--onmain">
+					<div class="red-line"></div>
+					<h2 class="section-title work-sans">BLOG</h2>
+				</div>
+				<div style="clear:both"></div>
+
+				<div class="contact-blog-container contact-blog-container--left" data-aos="fade-left">
+					<ul class="blog-content">
+
+						<!-- これ以下をブログから表示 -->
+						<li class="blog-content__item">
+							
+							<a href="http://hitokara.co.jp/diy_office_reasons/" class="blog-content__main" target="_blank">
+								<div class="blog-thumbnail">
+									<img src="image/office.jpg" alt="blog-img" class="blog-thumbnail__image">
+								</div>
+								<div class="blog-info">
+									<div class="blog-info__title">総工事費50万以下でできるDIYオフィス改造</div>
+									<div class="blog-info__writer">By: ○○○○○○○○○</div>
+									<div class="blog-info__date work-sans">2018/10/01</div>
+								</div>
+							</a>
+							<div style="clear:both"></div>
+						</li>
+
+						<!--  -->
+						<!-- ここまでをブログから表示 -->
+						<li class="blog-content__item">
+							
+							<a href="http://hitokara.co.jp/diy_office_reasons/" class="blog-content__main" target="_blank">
+								<div class="blog-thumbnail">
+									<img src="image/ggb2.jpg" alt="blog-img" class="blog-thumbnail__image">
+								</div>
+								<div class="blog-info">
+								<div class="blog-info__title">総工事費50万以下でできるDIYオフィス改造</div>
+								<div class="blog-info__writer">By: ○○○○○○○○○</div>
+								<div class="blog-info__date work-sans">2018/10/01</div>
+							</div>
+							</a>
+							<div style="clear:both"></div>
+						</li>
+						<li class="blog-content__item">
+							
+							<a href="http://hitokara.co.jp/diy_office_reasons/" class="blog-content__main" target="_blank">
+								<div class="blog-thumbnail">
+									<img src="image/office2.jpg" alt="blog-img" class="blog-thumbnail__image">
+								</div>
+								<div class="blog-info">
+								<div class="blog-info__title">総工事費50万以下でできるDIYオフィス改造</div>
+								<div class="blog-info__writer">By: ○○○○○○○○○</div>
+								<div class="blog-info__date work-sans">2018/10/01</div>
+							</div>
+							</a>
+							<div style="clear:both"></div>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="more-blog">
+					<a href="javscript:void(0);" class="view-more more-button">
+						<img src="image/viewmore.png" alt="view-more" class="image-size--viewmore rotate-button">
+					</a>
+					<div class="view-more view-more--text">View More</div>
+				</div>
+
+			</div>
+
+			<div class="contact">
+				<div  id="contactUs"></div>
+				<div class="title-container title-container--onmain title-container--onmain--contact">
+					<div class="red-line"></div>
+					<h2 class="section-title work-sans">GET IN TOUCH</h2>
+				</div>
+				<div style="clear:both"></div>
+				<div class="background-font--small">GET IN TOUCH</div>
+				<form action="javascript:void(0)" class="contact-blog-container contact-blog-container--right" id="contactForm" data-aos="fade-right">
+					<div class="textbox--title work-sans">NAME</div>
+					<input type="text" placeholder="Name" class="textbox--name work-sans" required> 
+					<div class="textbox--title work-sans">EMAIL</div>
+					<input type="text" placeholder="Email" class="textbox--name work-sans" required>
+					<div class="textbox--title work-sans">SUBJECT</div>
+					<input type="text" placeholder="Subject" class="textbox--name work-sans" required>
+					<div class="textbox--title work-sans">MESSAGE</div>
+					<textarea placeholder="問い合わせ内容" class="textbox--textarea" required></textarea>
+					<div class="submit">
+						<button type="submit" class="submit-button"><img src="image/paperplane.png" alt="paperplane" id="paperPlane" class="image-size--submit paperplane" /></button>
+					</div>
+				</form>
+			</div>
+		</section>
+		
+	</div>
+
+	<footer class="main-footer">		
+		<div class="extra-footer">
+			<div class="footer-text-container footer-text-container--right">
+				<p><a href="#aboutUs" class="footer-text">会社概要</a></p>
+				<p><a id="recruit" class="footer-text" onclick="Alert()">採用情報</a></p>
+				<p><img src="image/phone.png" alt="phone" class="footer-icon--2"><a href="tel:09012368260" class="footer-text">	050-5274-9631</a></p>
+				<p><img src="image/email.png" alt="email" class="footer-icon--3"><a href="mailto:info@blitzgate.co.jp" class="footer-text">	info@blitzgate.co.jp</a></p>
+				<p><a href="#" class="footer-text footer-text--address">&#12306;460-0003&nbsp;<br>愛知県名古屋市中区錦１丁目16-13&nbsp;チサンマンション錦1102</a></p>
+			</div>
+			
+			<div class="footer-text-container footer-text-container--left">
+				<p>SOCIAL</p>
+				<p><a href="javascript:void(0);" class="footer-text work-sans">facebook</a></p>
+				<p><a href="javascript:void(0);" class="footer-text work-sans">Twitter</a></p>
+			</div>
+			<div style="clear:both"></div>
+			<div class="footer-text-container footer-text-container--map">
+				<iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d694.8192640792265!2d136.89262744425955!3d35.16866913813554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376d7f619a11f%3A0x51610a27b33e9daa!2z44CSNDYwLTAwMDMgQWljaGkta2VuLCBOYWdveWEtc2hpLCBOYWthLWt1LCBOaXNoaWtpLCAxIENob21l4oiSMTbiiJIxMyDjg4HjgrXjg7Pjg57jg7Pjgrfjg6fjg7PpjKY!5e0!3m2!1sen!2sjp!4v1536134631725"  allowfullscreen></iframe>
+			</div> 
+
+			<div class="copyright-text"><span>Copyrights &copy; 2018 Blitzgate All Rights Reserved</span></div>
+		</div>
+	</footer>
+
+</div>
+
+<!-- ↓↓↓↓↓モーダル　モーダル　モーダル ↓↓↓↓↓↓-->
+<article id="modal" class="member-modal">
+	<div class="simple-modal">
+		<div id="modalHeader" class="modal-header">
+			<h4 class="modal-name">
+				<span id="modalFn" class="modal-name--fn">--</span>
+				<span id="modalLn" class="modal-name--ln">--</span>
+			</h4>
+			<div id="modalTitle" class="modal-title">--</div>
+		</div>
+
+		<div class="modal-content">
+			<img alt="modal-img" id="modalImage" class="modal-image">
+			<img alt="modal-msg" id="modalMessage" class="modal-message">
+			<div style="clear:both"></div>
+			<p id="modalText" class="modal-text">--</p>
+		</div>
+	</div>
+</article>
+<!-- ↑↑↑↑↑↑ モーダル　モーダル　モーダル ↑↑↑↑↑-->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="aos/aos.js"></script>
+
+<!-- 以下 particles.js library - https://github.com/VincentGarreau/particles.js --> 
+<script src="js/particles.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/main.js"></script>
+<!-- <script src="js/app.js"></script> app.js いらないのでは？ stats.js と干渉していた-->
+
+<!-- /* Flexslider */ -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+<script defer src="js/jquery.flexslider.js"> </script>
+<script type="text/javascript">
+
+$(window).load(function(){
+  $('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 380,
+    itemMargin: 5,
+    pausePlay: false,
+    slideshow: false,
+    start: function(slider){
+      $('body').removeClass('loading');
+    }
+  });
+});
+
+
+/* PARTICLE JS PARTICLE JS PARTICLE JS */
+
+particlesJS("particles-js", 
+	{
+	"particles":{
+		"number":{
+			"value":80,
+			"density":{
+				"enable":true,
+				"value_area":800
+			}
+		},
+		"color":{
+			"value":"#fff"
+		},
+		"shape":{
+			"type":"circle",
+			"stroke":{
+				"width":0,
+				"color":"#000000"
+			},
+			"polygon":{
+				"nb_sides":5
+			},
+			"image":{
+				"src":"img/github.svg",
+				"width":100,"height":100
+			}
+		},
+		"opacity":{
+			"value":0.7,
+			"random":false,
+			"anim":{
+				"enable":false,
+				"speed":1,
+				"opacity_min":0.6,
+				"sync":false
+			}
+		},
+		"size":{
+			"value":3,
+			"random":true,
+			"anim":{
+				"enable":false,
+				"speed":40,
+				"size_min":0.1,
+				"sync":false
+			}
+		},
+		"line_linked":{
+			"enable":true,
+			"distance":200,
+			"color":"#ffffff",
+			"opacity":0.8,
+			"width":1
+		},
+		"move":{
+			"enable":true, //"enable":true; でparticle動き出す falseは小画面とchrome以外のBrowser, Mac以外のデバイスに対応していない
+			"speed":4,
+			"direction":"none",
+			"random":false,
+			"straight":false,
+			"out_mode":"out",
+			"bounce":false,
+			"attract":{
+				"enable":false,
+				"rotateX":600,
+				"rotateY":1200
+			}
+		}
+	},
+	"interactivity":{
+		"detect_on":"canvas",
+		"events":{
+			"onhover":{
+				"enable":true,
+				"mode":"repulse"
+			},
+			"onclick":{
+				"enable":true,
+				"mode":"push"
+			},
+			"resize":true
+		},
+		"modes":{
+			"grab":{
+				"distance":400,
+				"line_linked":{
+					"opacity":1
+				}
+			},
+			"bubble":{
+				"distance":400,
+				"size":40,
+				"duration":2,
+				"opacity":8,
+				"speed":3
+			},
+			"repulse":{ 
+				"distance":150,
+				"duration":0.4
+			},
+			"push":{
+				"particles_nb":2
+			},
+			"remove":{
+				"particles_nb":2
+			}
+		}
+	},
+	"retina_detect":true
+});
+
+var count_particles, update; 
+stats = new Stats; 
+stats.setMode(0); 
+stats.domElement.style.display = 'none'; 
+document.body.appendChild(stats.domElement); 
+count_particles = document.querySelector('.js-count-particles'); 
+update = function() {
+	stats.begin(); 
+	stats.end(); 
+	if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { 
+		count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; 
+	} 
+	requestAnimationFrame(update); 
+}; 
+requestAnimationFrame(update);
+
+/* PARTICLES PARTICLES ここまで*/
+
+</script> 
+
+
+
+</body>
+</html>

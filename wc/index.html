@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weight Converter</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<h1 class="display-4 text-center">Weight Converter</h1>
+				<form>
+					<div class="form-group">
+						<input type="number" name="input" id="lbInput" class="form-control form-control-lg" placeholder="Enter weight in pounds...">
+					</div>
+				</form>
+				<ul id="output">
+					<li class="card card-primary mb-2">
+						<div class="card-block">
+							<h4>Grams: </h4>
+							<div id="gOutput"></div>
+						</div>
+					</li>
+
+					<li class="card card-success mb-2">
+						<div class="card-block">
+							<h4>Kilograms: </h4>
+							<div id="kgOutput"></div>
+						</div>
+					</li>
+
+					<li class="card card-danger mb-2">
+						<div class="card-block">
+							<h4>Ounces: </h4>
+							<div id="ozOutput"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+	document.getElementById("output").style.visibility = "hidden";
+	document.getElementById("lbInput").addEventListener("input", function(e){
+		let pounds = e.target.value;
+		var grams = pounds / 0.0022046;
+		var kg = pounds / 2.2046;
+		var ounce = pounds * 16;
+
+		document.getElementById("output").style.visibility = "visible";
+		document.getElementById('gOutput').innerHTML = Math.round(grams * 100) / 100 + " g";
+		document.getElementById('kgOutput').innerHTML = Math.round(kg * 100) / 100 + " kg";;
+		document.getElementById('ozOutput').innerHTML = Math.round(ounce * 100) / 100 + " oz";;
+	})
+
+</script>
+	
+</body>
+</html>
